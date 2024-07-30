@@ -23,7 +23,10 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-![Video Walkthrough](https://i.imgur.com/4ByeSg6.mp4)
+<video width="320" height="240" controls>
+  <source src="https://i.imgur.com/4ByeSg6.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif 
