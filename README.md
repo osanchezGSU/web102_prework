@@ -4,7 +4,7 @@ Submitted by: Osvaldo Sanchez-Padilla
 
 Sea Monster Crowdfunding is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: 3 hours spent in total
+Time spent: 6 hours spent in total
 
 ## Required Features
 
@@ -40,7 +40,7 @@ The challenge I faced during this project was understanding arrow functions, as 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2024 
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
