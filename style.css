@@ -71,10 +71,13 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+button:hover{
+    cursor: pointer;
+}
 
 .stats-container {
     display: flex;
-    
+
 }
 .stats-container:hover{
    
