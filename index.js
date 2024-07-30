@@ -167,11 +167,12 @@ const numOfUnfundedGames = unFundedGames.length;
 
 
 // create a string that explains the number of unfunded games using the ternary operator
-const fundingInfo = `'A total of ${totalRaised} has been raised for ${numOfGames}. Currently ${numOfUnfundedGames} ${numOfUnfundedGames > 1 ? 'games' : 'game'} remains unfunded. We
-    need your help to fund these amazing games!'`
+const fundingInfo = `A total of ${totalRaised} has been raised for ${numOfGames} games. Currently ${numOfUnfundedGames} ${numOfUnfundedGames > 1 ? 'games remain' : 'game remains'} unfunded. We
+    need your help to fund these amazing games!`;
 
 // create a new DOM element containing the template string and append it to the description container
 const companyDetails = document.createElement('p');
+companyDetails.textContent = fundingInfo;
 descriptionContainer.appendChild(companyDetails);
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
@@ -186,7 +187,25 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+const [firstGame, secondGame, ...restOfGames] = sortedGames;
+const firstGameName = firstGame.name;
+const secondGameName = secondGame.name;
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const firstGameP = document.createElement('p');
+firstGameP.textContent = firstGameName;
+firstGameContainer.appendChild(firstGameP);
 
 // do the same for the runner up item
+const secondGameP = document.createElement('p');
+secondGameP.textContent = secondGameName;
+secondGameContainer.appendChild(secondGameP);
+
+/************************************************************************************
+ * Challenge 8: Add Search Bar for Names
+ * Skills used: functions, filters
+ */
+
+
+
+

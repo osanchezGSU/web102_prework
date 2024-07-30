@@ -85,3 +85,24 @@ button:hover{
     box-shadow: 0 0 30px lightblue
 
 }
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.search-container label{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.search-container input{
+    border-radius: 10px;
+    min-width: 300px;
+    border-width: 4px;
+}
+
+.search-container input:hover {
+    border-color: lightblue;
+}
+
