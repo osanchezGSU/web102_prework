@@ -22,8 +22,7 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/7SztKox"  ><a href="//imgur.com/a/7SztKox">Sea Monster Crowdfunding</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+https://github.com/user-attachments/assets/aa701a7c-7696-4c5d-af39-5e9d11d9c258
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif 
