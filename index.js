@@ -167,7 +167,7 @@ const numOfUnfundedGames = unFundedGames.length;
 
 
 // create a string that explains the number of unfunded games using the ternary operator
-const fundingInfo = `A total of ${totalRaised} has been raised for ${numOfGames} games. Currently ${numOfUnfundedGames} ${numOfUnfundedGames > 1 ? 'games remain' : 'game remains'} unfunded. We
+const fundingInfo = `A total of ${totalRaised.toLocaleString("en-US")} has been raised for ${numOfGames} games. Currently ${numOfUnfundedGames} ${numOfUnfundedGames > 1 ? 'games remain' : 'game remains'} unfunded. We
     need your help to fund these amazing games!`;
 
 // create a new DOM element containing the template string and append it to the description container
@@ -205,7 +205,21 @@ secondGameContainer.appendChild(secondGameP);
  * Challenge 8: Add Search Bar for Names
  * Skills used: functions, filters
  */
+const searchInput = document.querySelector("#search");
+searchInput.addEventListener("input", e => {
+    const value = e.target.value;
+    filterBySearch(value);        
+   
 
+});
+function filterBySearch(value){
+    deleteChildElements(gamesContainer);
 
+    const searchedGames = GAMES_JSON.filter(game =>
+        game.name.includes(value)
+    );
+
+    addGamesToPage(searchedGames);
+};
 
 
